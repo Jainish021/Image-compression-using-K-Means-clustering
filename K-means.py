@@ -6,8 +6,8 @@ import pandas as pd
 
 # Importing the image and normalizing it.
 def preprocess():
-    #img = np.array(Image.open('hw3_part2_data/Penguins.jpg'))
-    img = np.array(Image.open('hw3_part2_data/Koala.jpg'))
+    #img = np.array(Image.open('images/Penguins.jpg'))
+    img = np.array(Image.open('images/Koala.jpg'))
     img = img/255
     points = np.reshape(
         img, (img.shape[0]*img.shape[1], img.shape[2]))
